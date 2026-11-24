@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #E33CC7;
+  color: #FFFFFF;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Halftone / Subtle Dot Pattern */
+.bg-halftone {
+  background-image: radial-gradient(#140E24 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-halftone-subtle {
+  background-image: radial-gradient(rgba(20, 14, 36, 0.08) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.bg-halftone-dark {
+  background-image: radial-gradient(rgba(245, 244, 116, 0.15) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+/* CRT Screen Scanline Effect for DAWIN */
+.crt-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 10;
+  background-size: 100% 3px, 4px 100%;
+  pointer-events: none;
+}
+
+.crt-glow {
+  text-shadow: 0 0 8px rgba(45, 223, 255, 0.8), 0 0 20px rgba(45, 223, 255, 0.4);
+}
+
+.crt-glow-sunny {
+  text-shadow: 0 0 8px rgba(245, 244, 116, 0.8), 0 0 20px rgba(245, 244, 116, 0.4);
+}
+
+.crt-glow-pink {
+  text-shadow: 0 0 8px rgba(227, 60, 199, 0.8), 0 0 20px rgba(227, 60, 199, 0.4);
+}
+
+/* Checkered Strip Effect (seen in Design Sheet merch and badges) */
+.checkered-pattern {
+  background-image: 
+    linear-gradient(45deg, #140E24 25%, transparent 25%), 
+    linear-gradient(-45deg, #140E24 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #140E24 75%), 
+    linear-gradient(-45deg, transparent 75%, #140E24 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+.checkered-pink-aqua {
+  background-image: 
+    linear-gradient(45deg, #E33CC7 25%, #2DDFFF 25%, #2DDFFF 50%, #E33CC7 50%, #E33CC7 75%, #2DDFFF 75%, #2DDFFF 100%);
+  background-size: 20px 20px;
+}
+
+/* Diagonal Hazard Stripes */
+.stripe-accent {
+  background: repeating-linear-gradient(
+    -45deg,
+    #FFAA47,
+    #FFAA47 12px,
+    #F54D28 12px,
+    #F54D28 24px
+  );
+}
+
+.stripe-night {
+  background: repeating-linear-gradient(
+    -45deg,
+    #1F1735,
+    #1F1735 14px,
+    #140E24 14px,
+    #140E24 28px
+  );
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+  border-left: 2px solid #140E24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFAA47;
+  border: 2px solid #140E24;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F54D28;
+}
+
+/* Text stroke utility */
+.text-stroke-ink {
+  -webkit-text-stroke: 2px #140E24;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 2px #FFFFFF;
+}
+
+@layer utilities {
+  .clip-chamfer {
+    clip-path: polygon(
+      12px 0%, calc(100% - 12px) 0%,
+      100% 12px, 100% calc(100% - 12px),
+      calc(100% - 12px) 100%, 12px 100%,
+      0% calc(100% - 12px), 0% 12px
+    );
+  }
+}

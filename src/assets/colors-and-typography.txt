@@ -1,0 +1,137 @@
+================================================================================
+DAYBREAK — THE NEW YEAR EDITION (BENGALURU)
+BRAND DESIGN SPECIFICATION: COLORS & TYPOGRAPHY
+Organised by ShipIt Teens
+================================================================================
+
+--------------------------------------------------------------------------------
+1. BRAND COLOUR PALETTE (OFFICIAL EVENT DESIGN SHEET v1.0)
+--------------------------------------------------------------------------------
+
+A. PRIMARY ACCENTS & CORE SPECTRUM
+
+1. Psychedelic Aqua
+   - HEX:        #2DDFFF
+   - RGB:        rgb(45, 223, 255)
+   - HSL:        hsl(189, 100%, 59%)
+   - Tailwind:   bg-daybreak-aqua / text-daybreak-aqua
+   - Usage:      Attendee badge banner, speed accents, neon indicators, tech pills
+
+2. Sunny (Yellow)
+   - HEX:        #F5F474
+   - RGB:        rgb(245, 244, 116)
+   - HSL:        hsl(60, 86%, 71%)
+   - Tailwind:   bg-daybreak-sunny / text-daybreak-sunny
+   - Usage:      Pill tags ("SHIPIT TEENS PRESENTS"), sunrise core, stickers, badge clips
+
+3. Tech Pink
+   - HEX:        #E33CC7
+   - RGB:        rgb(227, 60, 199)
+   - HSL:        hsl(310, 77%, 56%)
+   - Tailwind:   bg-daybreak-pink / text-daybreak-pink
+   - Usage:      Edition pill ("THE NEW YEAR EDITION"), lanyard straps, accents, selection highlight
+
+4. Romantic Orange
+   - HEX:        #FFAA47
+   - RGB:        rgb(255, 170, 71)
+   - HSL:        hsl(32, 100%, 64%)
+   - Tailwind:   bg-daybreak-orange / text-daybreak-orange
+   - Usage:      Primary CTA button background, sunrise gradient arc, radiating rays
+
+5. Dragon Fire (Orange-Red)
+   - HEX:        #F54D28
+   - RGB:        rgb(245, 77, 40)
+   - HSL:        hsl(11, 91%, 56%)
+   - Tailwind:   bg-daybreak-dragon / text-daybreak-dragon
+   - Usage:      High-voltage alerts, deadline markers, active phase dots, button hover states
+
+
+B. FOUNDATIONAL BACKGROUNDS & INK
+
+1. Cream / Warm Off-White (Primary Page Background)
+   - HEX:        #FAF8F5 (50: #FDFCF9, 100: #FAF8F5, 200: #F4EFE6, 300: #E9E2D5)
+   - RGB:        rgb(250, 248, 245)
+   - Tailwind:   bg-cream-100 / bg-cream-50
+   - Usage:      Editorial warm paper surface, prevents sterile digital glare
+
+2. Ink Midnight (Typography & Brutalist Borders)
+   - HEX:        #140E24 (950: #0B0714, 900: #140E24, 800: #1F1735, 700: #2F244C)
+   - RGB:        rgb(20, 14, 36)
+   - Tailwind:   text-ink-950 / border-ink-950 / bg-ink-950
+   - Usage:      Primary body text, brutalist 2px/3px/4px borders, hard drop shadows, deep night sections
+
+3. Ink Muted (Supporting Metadata)
+   - HEX:        #5E5474
+   - RGB:        rgb(94, 84, 116)
+   - Tailwind:   text-ink-muted
+   - Usage:      Captions, secondary timestamps, helper notes, sub-labels
+
+
+--------------------------------------------------------------------------------
+2. DAWIN CHARACTER COLOR PALETTE (OFFICIAL CHARACTER DESIGN SHEET)
+--------------------------------------------------------------------------------
+
+- Dark / Screen / Linework:    #1E1E1E  rgb(30, 30, 30)
+- Cream Hoodie / Body:         #F5F1E8  rgb(245, 241, 232)
+- Primary Orange Accent:       #FF7A00  rgb(255, 122, 0)
+- Gold Warm Highlights:        #FFC94D  rgb(255, 201, 77)
+- Blue-Grey Cool Accents:      #4F6D9A  rgb(79, 109, 154)
+- Purple Contrast Accent:      #6A4C93  rgb(106, 76, 147)
+
+
+--------------------------------------------------------------------------------
+3. TYPOGRAPHY SYSTEM
+--------------------------------------------------------------------------------
+
+A. HEADINGS & TITLES: Space Grotesk
+   - Family:       'Space Grotesk', system-ui, sans-serif
+   - Fallback:     sans-serif
+   - Weights:      600 (SemiBold), 700 (Bold), 800 (ExtraBold)
+   - Letterspace:  -0.02em to -0.04em (tight, punchy)
+   - Usage:        All section headers (H2, H3, H4), card titles, navigation items, CTA labels
+   - Google Font:  https://fonts.google.com/specimen/Space+Grotesk
+
+B. MONUMENTAL DISPLAY: Unbounded
+   - Family:       'Unbounded', 'Space Grotesk', sans-serif
+   - Weights:      700 (Bold), 800 (ExtraBold), 900 (Black)
+   - Style:        Normal & Italic
+   - Letterspace:  -0.03em to -0.05em
+   - Usage:        Main "DAYBREAK" hero headline, "DON'T JUST COUNT DOWN. BUILD SOMETHING."
+
+C. TECHNICAL & METADATA: IBM Plex Mono
+   - Family:       'IBM Plex Mono', monospace
+   - Weights:      400 (Regular), 500 (Medium), 600 (SemiBold), 700 (Bold)
+   - Letterspace:  0.02em to 0.08em (widened for mechanical/terminal feel)
+   - Usage:        Time codes, schedule slots, coordinates ("BLR 12.9716° N"), pill badges, tags, code snippets
+   - Google Font:  https://fonts.google.com/specimen/IBM+Plex+Mono
+
+D. BODY & PROSE: Plus Jakarta Sans
+   - Family:       'Plus Jakarta Sans', system-ui, sans-serif
+   - Weights:      400 (Regular), 500 (Medium), 600 (SemiBold), 700 (Bold)
+   - Line-height:  1.6 to 1.7 (comfortable editorial reading)
+   - Usage:        Manifesto philosophy paragraphs, card descriptions, FAQ answers, modal forms
+   - Google Font:  https://fonts.google.com/specimen/Plus+Jakarta+Sans
+
+
+--------------------------------------------------------------------------------
+4. GOOGLE FONTS CDN IMPORT STRING
+--------------------------------------------------------------------------------
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
+
+
+--------------------------------------------------------------------------------
+5. ASSETS INDEX IN THIS FOLDER (src/assets/)
+--------------------------------------------------------------------------------
+
+- bengaluru-skyline-strip.png  : Illustrated Bengaluru skyline sunrise strip (Vidhana Soudha, sun, lightning, neon accents)
+- daybreak-design-sheet.jpg    : Official ShipIt Teens Daybreak Event Design Sheet v1.0
+- dawin-design-sheet.jpg       : Official DAWIN character design sheet (12 expressions, turnarounds, lore)
+- favicon.svg                  : Official Daybreak sunrise mark vector favicon
+- colors-and-typography.txt    : This design specification document
+================================================================================
